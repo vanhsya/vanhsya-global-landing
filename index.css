@@ -1,0 +1,274 @@
+/* Additional CSS for Vanhsya Beauty - Cosmic Elegance */
+
+/* Tailwind CSS base styles */
+/* stylelint-disable-next-line at-rule-no-unknown */
+@tailwind base;
+/* stylelint-disable-next-line at-rule-no-unknown */
+@tailwind components;
+/* stylelint-disable-next-line at-rule-no-unknown */
+@tailwind utilities;
+
+/* Custom scrollbar for a more integrated look */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c001f; /* Dark background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8a2be2; /* Cosmic purple */
+  border-radius: 4px;
+}
+
+/* Firefox scrollbar support */
+html {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #8a2be2 #0c001f; /* thumb color track color */
+}
+
+/* Basic styles for the body to ensure full height and font smoothing */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Global animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Delay utilities */
+.animation-delay-100 {
+  animation-delay: 0.1s;
+}
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+.animation-delay-400 {
+  animation-delay: 0.4s;
+}
+.animation-delay-500 {
+  animation-delay: 0.5s;
+}
+.animation-delay-600 {
+  animation-delay: 0.6s;
+}
+.animation-delay-700 {
+  animation-delay: 0.7s;
+}
+.animation-delay-800 {
+  animation-delay: 0.8s;
+}
+.animation-delay-900 {
+  animation-delay: 0.9s;
+}
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+/* Custom animations from tailwind.config.js */
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 5px rgba(138, 43, 226, 0.5), 0 0 10px rgba(138, 43, 226, 0.5);
+  }
+  50% {
+    opacity: 0.8;
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.8), 0 0 20px rgba(138, 43, 226, 0.8);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite alternate;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+/* Veil animation */
+@keyframes veil-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5; /* Adjust as needed */
+  }
+}
+
+.animated-veil {
+  animation: veil-fade-in 2s ease-out forwards;
+  background: linear-gradient(180deg, rgba(12, 0, 31, 0.8) 0%, rgba(138, 43, 226, 0.2) 100%);
+}
+
+/* Custom text colors */
+.cosmic-purple-text {
+  color: #8a2be2; /* cosmic-purple from tailwind.config.js */
+}
+
+.cosmic-pink-text {
+  color: #ff69b4; /* cosmic-pink from tailwind.config.js */
+}
+
+/* ComingSoonLanding specific styles */
+.coming-soon-timer-item {
+  @apply text-4xl md:text-5xl font-bold mx-2 cosmic-purple-text;
+}
+
+.coming-soon-title-vanhsya {
+  @apply text-6xl md:text-8xl font-cinzel font-bold mb-4 animate-pulse-glow;
+}
+
+.coming-soon-title-global {
+  @apply text-2xl md:text-3xl font-inter tracking-widest mb-8 animate-fade-in-up;
+}
+
+.coming-soon-launching-soon {
+  @apply text-xl md:text-2xl font-inter mb-4 animate-fade-in-up animation-delay-100;
+}
+
+.coming-soon-description {
+  @apply text-lg md:text-xl font-inter mb-8 animate-fade-in-up animation-delay-200;
+}
+
+.coming-soon-launching-text {
+  @apply text-4xl md:text-5xl font-bold cosmic-purple-text;
+}
+
+.coming-soon-form {
+  @apply flex flex-col md:flex-row gap-4 mb-8 animate-fade-in-up animation-delay-300;
+}
+
+.coming-soon-input {
+  @apply p-3 rounded-full bg-white bg-opacity-10 border border-cosmic-purple text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-cosmic-pink;
+}
+
+.coming-soon-button {
+  @apply px-6 py-3 rounded-full bg-cosmic-purple hover:bg-cosmic-pink transition-colors font-semibold;
+}
+
+.coming-soon-social-links-container {
+  @apply flex space-x-6 mb-8 animate-fade-in-up animation-delay-400;
+}
+
+.coming-soon-social-link {
+  @apply text-white hover:text-cosmic-pink transition-colors text-3xl;
+}
+
+.coming-soon-copyright {
+  @apply text-sm text-gray-400 animate-fade-in-up animation-delay-500;
+}
+
+@keyframes gradientX {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+@keyframes floatParticle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes progressBar {
+  0% { width: 0%; }
+  100% { width: 85%; }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.animate-gradient-x {
+  animation: gradientX 3s ease infinite;
+}
+
+.animate-float {
+  animation: floatParticle 6s ease-in-out infinite;
+}
+
+.animate-progress {
+  animation: progressBar 3s ease-out forwards;
+}
+
+/* Animation delays */
+.animation-delay-500 {
+  animation-delay: 0.5s;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-delay-1500 {
+  animation-delay: 1.5s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-2500 {
+  animation-delay: 2.5s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}

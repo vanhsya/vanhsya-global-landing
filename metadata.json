@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Vanhsya Beauty - Cosmic Elegance",
+  "description": "An immersive, interactive landing page for a luxury beauty brand, built with React, Three.js, and Tailwind CSS. Features a cinematic hero animation, dynamic particle effects, and a scrolling showcase.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
