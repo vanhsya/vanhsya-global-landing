@@ -1,125 +1,155 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# VANHSYA Beauty — Cosmic Elegance
 
-# Vanhsya Beauty - Cosmic Elegance
+<p align="center">
+  <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1400&q=80" alt="VANHSYA Beauty" width="100%" />
+</p>
 
-🌟 **Where cosmic elegance meets timeless beauty** 🌟
+<p align="center">
+  <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react" />
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript" />
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite" />
+  <img alt="Three.js" src="https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js" />
+</p>
 
-A stunning, interactive web application showcasing the Vanhsya Global beauty brand with AI-powered features, 3D animations, and immersive user experiences.
+> A premium, immersive beauty-brand landing experience blending luxury aesthetics, AI interactions, and motion-rich storytelling.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1djucJipctcmuqEOpZRcgtt2J0BTjlhC5
+## Overview
 
-## ✨ Features
+This project presents a futuristic beauty brand concept built for a premium audience. The experience combines cinematic visuals, modern interaction design, and AI-powered features to create a memorable digital presence.
 
-- **Interactive 3D Canvas**: Beautiful Three.js animations with particle systems
-- **AI Oracle**: Multi-modal AI assistant with chat, image generation, video creation, and live conversation
-- **Responsive Design**: Optimized for all devices with smooth animations
-- **Cosmic Theme**: Stunning purple and pink gradient design with space-inspired elements
-- **Global Ingredient Map**: Interactive globe showing worldwide beauty ingredient sources
-- **Phoenix Animation**: Mystical phoenix with floating ember particles
-- **Countdown Timer**: Elegant countdown to product launch
-- **Coming Soon Modal**: Detailed brand story and contact information
+The product is designed around:
 
-## 🚀 Quick Start
+- Luxury beauty branding
+- Immersive motion and storytelling
+- AI-enhanced engagement concepts
+- High-end user experience design
+- Responsive visual design across all devices
+
+## Features
+
+### Visual experience
+- 3D-inspired animation and dynamic canvas effects
+- Elegant gradient system with premium color treatment
+- Responsive layout for mobile, tablet, and desktop
+- Modern, cinematic presentation for product storytelling
+
+### AI and interactivity
+- AI assistant experience for user support and discovery
+- Image and video generation concepts
+- Real-time conversational interaction ideas
+- Expanded creator and experiential storytelling flow
+
+### Brand presentation
+- Product launch feel with countdown and announcement moments
+- Global ingredient and sourcing storytelling
+- Premium hero and section composition
+- Conversion-focused CTA experience
+
+## Technology stack
+
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Three.js
+- Google Gemini AI APIs
+
+## Quick start
 
 ### Prerequisites
-- **Node.js** (v18 or higher)
-- **npm** or **yarn**
-- **Gemini API Key** (get yours at [AI Studio](https://aistudio.google.com/app/apikey))
 
-### Installation
+- Node.js 18+
+- npm or yarn
+- Gemini API key
 
-1. **Clone and navigate to the project:**
-   ```bash
-   cd copy-of-vanhsya-beauty---cosmic-elegance
-   ```
+### Install
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+```bash
+git clone https://github.com/vanhsya/vanhsya-global-landing.git
+cd vanhsya-global-landing
+npm install
+```
 
-3. **Configure your API key:**
-   - Open `.env.local`
-   - Replace `your_actual_gemini_api_key_here` with your real Gemini API key
-   ```env
-   GEMINI_API_KEY=your_actual_gemini_api_key_here
-   ```
+### Configure environment
 
-4. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
+Create `.env.local` and add your key:
 
-5. **Open your browser:**
-   Navigate to `http://localhost:3000`
+```bash
+GEMINI_API_KEY=your_api_key_here
+```
 
-## 🛠️ Build for Production
+### Run development server
+
+```bash
+npm run dev
+```
+
+Open:
+
+```bash
+http://localhost:3000
+```
+
+### Production build
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## 🎨 Technology Stack
+## Project structure
 
-- **React 19** - Modern React with latest features
-- **TypeScript** - Type-safe development
-- **Three.js** - 3D graphics and animations
-- **Tailwind CSS** - Utility-first styling
-- **Vite** - Fast build tool and dev server
-- **Google Gemini AI** - Multi-modal AI capabilities
+```bash
+src/
+├── components/
+├── utils/
+├── App.tsx
+├── index.tsx
+├── index.css
+├── types.ts
+public/
+├── assets/
+└── ...
+```
 
-## 🌟 AI Features
+## Design direction
 
-### AI Oracle Tools:
-1. **AI Chat** - Intelligent conversation with web search and maps integration
-2. **Image Studio** - Generate, edit, and analyze images
-3. **Video Suite** - Create and analyze videos with Veo AI
-4. **Live Conversation** - Real-time voice chat with AI
-5. **Audio Transcription** - Convert speech to text
+The visual language is inspired by luxury, cosmic elegance, and high-end digital storytelling.
 
-## 📱 Responsive Design
+- Deep violet and rose-accented palettes
+- Ethereal gradients and motion effects
+- Premium text hierarchy and spacing
+- Futuristic but elegant interface language
 
-The application is fully responsive and optimized for:
-- Desktop computers
-- Tablets
-- Mobile phones
-- Various screen sizes and orientations
+## Security and best practices
 
-## 🎭 Animations & Effects
+- Store API keys in `.env.local` only
+- Do not commit secrets to version control
+- Validate generated requests and external integrations
+- Review product claims before public launch
 
-- Scroll-triggered reveal animations
-- Interactive particle systems
-- Floating phoenix with ember effects
-- Rotating global ingredient map
-- Pulsing countdown timer
-- Smooth hover transitions
+## Roadmap
 
-## 🔧 Troubleshooting
+- Improve CMS content structure
+- Add dynamic product data and testimonials
+- Expand landing section storytelling
+- Add analytics and conversion tracking
+- Optimize performance and SEO further
 
-### Common Issues:
+## Contributing
 
-1. **API Key Error**: Make sure your Gemini API key is correctly set in `.env.local`
-2. **Build Errors**: Run `npm install` to ensure all dependencies are installed
-3. **3D Graphics Issues**: Ensure your browser supports WebGL
-4. **Audio/Video Features**: Grant microphone permissions when prompted
+Use clean, well-documented changes and keep the design premium and consistent.
 
-### Browser Compatibility:
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
+```bash
+git checkout -b feature/beauty-update
+git commit -m "Improve beauty landing experience"
+git push origin feature/beauty-update
+```
 
-## 📄 License
+## License
 
-© 2024 Vanhsya Beauty. All rights reserved.
-
-## 🤝 Support
-
-For questions or support, contact: [contact@vanhsya.global](mailto:contact@vanhsya.global)
+This project is for private brand use unless otherwise specified by the owner.
 
 ---
 
-*Experience the universe within. Discover cosmic elegance redefined.*
+Experience the universe within.
